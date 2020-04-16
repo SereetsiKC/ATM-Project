@@ -1,4 +1,4 @@
-
+package MyATM;
 
 public class Account {
     public int accountNumber;
