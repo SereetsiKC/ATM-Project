@@ -1,3 +1,4 @@
+package QuestionOne;
 
 public enum Deduction {
     Tax(18), Medical(12.5), CarAllowance(8), UIF(2);
@@ -8,3 +9,4 @@ public enum Deduction {
         this.perceptage = perceptage;
     }
 }
+

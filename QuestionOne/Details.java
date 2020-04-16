@@ -1,10 +1,10 @@
+package QuestionOne;
 
 public class Details {
     private String employeeIdNumber;
     private String firstame;
     private String surname;
     private double salary;
-    private int increasePercentage = 10;
 
     public void setEmployeeIdNumber(String newId) {
         this.employeeIdNumber = newId;
@@ -47,10 +47,10 @@ public class Details {
         System.out.printf(format, "EMPLOYEE SURNAME", this.surname);
         System.out.printf(format, "ORIGINAL SALARY:", "R" + String.format("%,.2f",this.salary));
 
-        double NewSalary = ((this.increasePercentage + 100) / 100) * this.salary;
+        double NewSalary = ((Increase.valueOf("percentage").value + 100) / 100) * this.salary;
         System.out.printf(format, "INCREASED SALARY:", "R" + String.format("%,.2f",NewSalary));
 
-        double increase = (this.increasePercentage / 100) * this.salary;
+        double increase = (Increase.valueOf("percentage").value / 100) * this.salary;
         System.out.printf(format, "INCREASE AMOUNT", "R" + String.format("%,.2f",increase));
     }
 
